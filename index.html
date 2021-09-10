@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background-image:url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat,no-repeat;
+      background-color: hsl(185, 75%, 39%);
+      background-position:-300px -500px,800px 300px;
+    }
+
+    .parent{
+      position: absolute;
+      display: block;
+      margin-top: 7%;
+      margin-left: 33%;
+
+    }
+    .child1{
+      height: 200px;
+      width: 500px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 25px 25px 0 0;
+      background-image: url(images/bg-pattern-card.svg);
+
+    }
+    .circle{
+      height: 120px;
+      width: 120px;
+      position: relative;
+      left: 190px;
+      top:-90px;
+      border-radius: 50%;
+      background-color: white;
+      background-image: url(images/image-victor.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 10;
+
+
+    }
+    .child2{
+      background-color: white;
+      position: relative;
+      top:-160px;
+      text-align: center;
+      padding-top: 80px;
+      border-radius: 0 0 25px 25px;
+    }
+    p{
+      margin:0 0 0 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+.inner{
+  display:flex;
+  justify-content: space-between;
+  margin: 20px 20px;
+}
+    }
+  </style>
+</head>
+<body>
+
+    <div class="parent">
+      <div class="child1" >
+        </div>
+        <div class="circle">
+
+        </div>
+      <div class="child2">
+        <h2>Victor Crest &nbsp &nbsp <span style="color:gray">26</span>
+        </h2>
+        <h3 style="text-align: center;color:gray">London</h3>
+          <hr style="color:gray">
+          <div class="inner">
+            <div class="">
+              <p>80K</p>
+              Followers
+            </div>
+            <div class="">
+              <p>803K</p>
+              Likes
+            </div>
+            <div class="">
+              <p>1.4K</p>
+              Photos
+            </div>
+          </div>
+          <br>
+      </div>
+    </div>
+
+</body>
+</html>
